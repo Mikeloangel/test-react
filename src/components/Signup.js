@@ -105,7 +105,7 @@ export default function Signup({ onSubmit }) {
         </div>
         <p className="login__error">{formik.touched.password_confirm && formik.errors.password_confirm}</p>
 
-        <button type="submit" className="login__button" disabled={!(formik.isValid)}>Зарегистрироваться</button>
+        <button type="submit" className="login__button" disabled={!(formik.dirty && formik.isValid)}>Зарегистрироваться</button>
       </form>
     </main>
   );
