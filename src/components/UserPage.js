@@ -11,9 +11,9 @@ import imgExit from '../images/exit.png';
 import imgMail from '../images/mail.png';
 import imgTel from '../images/tel.png';
 
-export default function UserPage() {
+export default function UserPage({ onSignOut }) {
   let history = useHistory();
-  let {uId} = useParams();
+  let { uId } = useParams();
 
   const [user, setUser] = useState({});
   const [isLoading, setisLoading] = useState(true);
@@ -24,9 +24,9 @@ export default function UserPage() {
         setUser(user.data);
         setisLoading(false);
       });
-  }, []);
+  }, [uId]);
 
-  function handleBackButton(){
+  function handleBackButton() {
     history.push('/');
   }
 
@@ -47,7 +47,7 @@ export default function UserPage() {
                   <h1 className="header__title">{`${user.first_name} ${user.last_name}`}</h1>
                   <h2 className="header__subtitle header__subtitle_profile">Партнер</h2>
                 </div>
-                <button className="header__button header__button_place_right">
+                <button className="header__button header__button_place_right" onClick={onSignOut}>
                   <span className="header__button-text">Выход</span>
                   <img src={imgExit} alt="exit button" className="header__button-img" />
                 </button>

@@ -7,7 +7,7 @@ import imgMore from '../images/more.png'
 import Loading from "./Loading";
 import UserListItem from "./UserListItem";
 
-export default function UserList() {
+export default function UserList({onSignOut}) {
   const [userList, setUserList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isMoreDisabled, setIsMoreDisabled] = useState(false);
@@ -39,7 +39,7 @@ export default function UserList() {
   return (
     <main>
       <section className="header">
-        <button className="header__button header__button_right">
+        <button className="header__button header__button_right" onClick={onSignOut}>
           <span className="header__button-text">Выход</span>
           <img src={imgExit} alt="exit button" className="header__button-img" />
         </button>
