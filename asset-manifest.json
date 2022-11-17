@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/test-react/static/css/main.55d8d7ea.chunk.css",
+    "main.js": "/test-react/static/js/main.3fbff684.chunk.js",
+    "main.js.map": "/test-react/static/js/main.3fbff684.chunk.js.map",
+    "runtime-main.js": "/test-react/static/js/runtime-main.ec1d59aa.js",
+    "runtime-main.js.map": "/test-react/static/js/runtime-main.ec1d59aa.js.map",
+    "static/js/2.f3039517.chunk.js": "/test-react/static/js/2.f3039517.chunk.js",
+    "static/js/2.f3039517.chunk.js.map": "/test-react/static/js/2.f3039517.chunk.js.map",
+    "index.html": "/test-react/index.html",
+    "precache-manifest.23e0d89a0080bc1e6ac014ebd0a807ac.js": "/test-react/precache-manifest.23e0d89a0080bc1e6ac014ebd0a807ac.js",
+    "service-worker.js": "/test-react/service-worker.js",
+    "static/css/main.55d8d7ea.chunk.css.map": "/test-react/static/css/main.55d8d7ea.chunk.css.map",
+    "static/js/2.f3039517.chunk.js.LICENSE.txt": "/test-react/static/js/2.f3039517.chunk.js.LICENSE.txt",
+    "static/js/main.3fbff684.chunk.js.LICENSE.txt": "/test-react/static/js/main.3fbff684.chunk.js.LICENSE.txt",
+    "static/media/spinner.gif": "/test-react/static/media/spinner.de993953.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec1d59aa.js",
+    "static/js/2.f3039517.chunk.js",
+    "static/css/main.55d8d7ea.chunk.css",
+    "static/js/main.3fbff684.chunk.js"
+  ]
+}
