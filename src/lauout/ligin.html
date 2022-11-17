@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../vendor/normalize.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../vendor/normalize.css">
+  <link rel="stylesheet" href="../vendor/fonts.css">
+  <link rel="stylesheet" href="ligin.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <main class="login">
+    <form class="login__form" novalidate>
+      <h1 class="login__header">Регистрация</h1>
+
+      <label class="login__label" for="name">Имя</label>
+      <input class="login__input login__input_error" type="text" name="name" required placeholder="Артур">
+      <p class="login__error error_name">Имя обязательно</p>
+
+      <label class="login__label" for="email">Электронная почта</label>
+      <input class="login__input" type="email" name="email" required placeholder="example@mail.ru">
+      <p class="login__error error_email">Почта!</p>
+
+      <label class="login__label" for="password">Пароль</label>
+      <div class="login__pasword-wrapper">
+        <input class="login__input" type="password" name="password" required placeholder="***">
+        <img src="../images/eye.png" alt="Show" class="login__psw-img">
+      </div>
+      <p class="login__error error_password">Пароль</p>
+
+      <label class="login__label" for="password_confirm">Подтвердите пароль</label>
+      <div class="login__pasword-wrapper">
+        <input class="login__input" type="password" name="password_confirm" required placeholder="***">
+        <img src="../images/eye.png" alt="Show" class="login__psw-img">
+      </div>
+      <p class="login__error error_password">Пароль</p>
+
+      <button type="submit" class="login__button">Зарегестрироваться</button>
+    </form>
+  </main>
+</body>
+
+</html>

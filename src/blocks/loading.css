@@ -1,0 +1,13 @@
+.loading{
+  width: 100%;
+  min-height: 50vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading__img{
+  max-width: 250px;
+  height: auto;
+}

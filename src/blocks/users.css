@@ -1,0 +1,131 @@
+.users {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.users__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, min-content));
+  gap: 20px;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  list-style: none;
+  width: 100%;
+}
+
+.users__card {
+  padding: 36px 20px 20px 20px;
+  margin: 0;
+  box-sizing: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  cursor: pointer;
+
+  box-shadow: 0px 1px 4px rgba(51, 51, 51, 0.15);
+  border-radius: 10px;
+
+  transition: all 300ms ease-in;
+}
+
+.users__card:hover {
+  box-shadow: 0px 2px 8px rgba(27, 27, 27, 0.15);
+  transform: translateY(-5px);
+}
+
+.users__pic {
+  border-radius: 50%;
+  max-width: 124px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.user__name {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: black;
+}
+
+.user__like {
+  align-self: flex-end;
+
+  width: 30px;
+  height: 28px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  background-image: url("../images/like.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+
+  transition: all 300ms ease-in;
+}
+
+.user__like:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.user__like_active {
+  background-image: url("../images/like-enables.png");
+}
+
+.users__more {
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  background: transparent;
+  border: 1px solid #151317;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 300ms ease-in;
+}
+
+.users__more:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.users__more-pic {
+  transition: all 300ms ease-in;
+}
+
+.users__more:hover .users__more-pic {
+  transform: translateY(-3px);
+}
+
+.users__more:disabled {
+  cursor: initial;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.users__more:disabled .users__more-pic{
+  display: none;
+}
+
+.users__more:disabled:hover{
+  transform: unset;
+  opacity: 1;
+}
