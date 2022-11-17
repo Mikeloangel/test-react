@@ -8,10 +8,10 @@ export default function Signup({ onSubmit }) {
   // formik logics
   const formik = useFormik({
     initialValues: {
-      name: 'mike',
-      email: 'mike@ya.ru',
-      password: '123',
-      password_confirm: '123',
+      name: '',
+      email: '',
+      password: '',
+      password_confirm: '',
     },
     validationSchema: Yup.object({
       name: Yup.string().max(20, 'Имя должно быть длиной до 20 символов').required('Введите ваше имя'),
